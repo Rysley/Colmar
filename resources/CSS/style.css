@@ -109,8 +109,8 @@ header {
 
 .highlights__main {
   width: 60%;
-  height: 300px;
   background-color: white;
+  border-right: 3px solid lightgrey;
 }
 
 .highlights__main img {
@@ -122,8 +122,6 @@ header {
   display: flex;
   flex-direction: column;
   width: 40%;
-  height: 300px;
-  background-color: blue;
 }
 
 .highlights__text_element {
@@ -136,17 +134,97 @@ header {
   padding: 10px 24px;
 }
 
-.highlights__photo img {
+.highlights__misc_photo:first-of-type {
+/*  padding-top: 32px;*/
+}
+
+.highlights__misc_photo {
   width: 35%;
-  background-color: black;
+  padding-top: 32px;
+  padding-bottom: 0px;
+  padding-left: 16px;
 }
 
-.highlights__container {
+.highlights__misc_photo img {
+  height: auto;
+  width: 100%;
+}
+
+.highlights__misc_container {
   display: flex;
-  background-color: yellow;
 }
 
-.highlights__text {
+.highlights__misc_text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   width: 65%;
   background-color: white;
+}
+
+.highlights__misc_text p {
+  padding: 4px;
+  padding-left: 16px;
+}
+
+.highlights__misc_text h3 {
+  padding: 4px;
+  padding-left: 16px;
+}
+
+.highlights__misc_text span {
+  font-size: 0.7rem;
+  color: aqua;
+  padding: 4px;
+  padding-left: 16px;
+}
+
+/* COURSES STYLES */
+
+.courses__headline {
+  margin: 0 auto;
+  text-align: center;
+  background-color: grey;
+  padding: 32px ;
+}
+
+.courses {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: grey;
+  padding-left: 72px;
+  padding-right: 72px;
+}
+
+.courses__subject {
+  /*display: flex;
+  flex-direction: column;*/
+  margin: 16px;
+  background-color: white;
+  /*height: auto;*/
+  width: 350px;
+  flex-grow: 2;
+  min-height: 380px;
+  height: auto;
+  /*height: auto;*/
+  /*width: 400px;
+  height: 300px;*/
+}
+
+.courses__subject img {
+  width: 100%;
+}
+
+.courses__subject h3 {
+  padding: 16px;
+}
+
+.courses__subject p {
+  padding: 8px 16px;
+}
+
+.courses__subject p:last-of-type {
+  padding-bottom: 24px;
 }
