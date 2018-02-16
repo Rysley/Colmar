@@ -181,11 +181,11 @@ header {
 
 /* COURSES STYLES */
 
-.courses__headline {
+.stripe {
   margin: 0 auto;
   text-align: center;
   background-color: grey;
-  padding: 32px ;
+  padding: 32px 32px 16px 32px ;
 }
 
 .courses {
@@ -206,7 +206,8 @@ header {
   /*height: auto;*/
   width: 350px;
   flex-grow: 2;
-  min-height: 380px;
+  overflow-x: hidden;
+  overflow-y: hidden;
   height: auto;
   /*height: auto;*/
   /*width: 400px;
@@ -228,3 +229,9 @@ header {
 .courses__subject p:last-of-type {
   padding-bottom: 24px;
 }
+
+.courses__subject_text {
+  height: 180px;
+}
+
+/* THESIS STYLES */
