@@ -1,17 +1,18 @@
-/* GENERAL STYLES */
+bule/* GENERAL STYLES */
 
 html {
   font-size: 18px;
 }
 
 body {
-  font-family: Helvetica, sans-serif;
+  font-family: Garamond, sans-serif;
   line-height: 1.4;
   color: lightgrey;
 }
 
 p {
   font-size: 0.9rem;
+  line-height: 1.6;
 }
 
 h2 {
@@ -194,7 +195,7 @@ header {
 }
 
 .highlights__misc_text span {
-  color: aqua;
+  color: blue;
   padding: 4px;
   padding-left: 16px;
 }
