@@ -18,6 +18,10 @@ h2 {
   font-size: 2rem;
 }
 
+h3 {
+  font-size: 1.4rem;
+}
+
 /* HEADER STYLES */
 
 header {
@@ -63,13 +67,14 @@ header {
   /*background-image: url("../../resources/media/images/banner.jpg");*/
   /*background-size: cover;*/
   width: 60%;
+  padding: 32px 24px;
   /*background-position: top right;*/
   /*margin: 32px 24px;*/
 }
 
 .banner__photo img {
-  width: 90%;
-  padding: 32px 24px;
+  width: 100%;
+  /*padding: 32px 24px;*/
 }
 
 .banner__text {
@@ -77,11 +82,10 @@ header {
   flex-direction: column;
   justify-content: center;
   width: 40%;
-  max-width: 450px;
+  padding-left: 32px;
 }
 
 .banner__text_element {
-  width: 90%;
   color: grey;
   padding: 10px;
 }
@@ -108,27 +112,28 @@ header {
 }
 
 .highlights__main {
+  display: flex;
+  flex-direction: column;
   width: 60%;
   background-color: white;
   border-right: 2px solid lightgrey;
+  padding-bottom: 32px;
 }
 
 .highlights__main_text {
   height: 300px
-  background-color: yellow;
-  z-index: 20;
+  padding-bottom: 32px;
 }
 
 .highlights__main img {
-  width: 90%;
+  width: 100%;
+  /*padding: 32px 24px 8px 24px;*/
+}
+
+.highlights__main_photo {
   padding: 32px 24px 8px 24px;
 }
 
-.highlights__main video {
-  width: 90%;
-  padding: 32px 24px 8px 24px;
-  overflow: hidden;
-}
 
 .highlights__misc {
   display: flex;
@@ -189,7 +194,6 @@ header {
 }
 
 .highlights__misc_text span {
-  font-size: 0.7rem;
   color: aqua;
   padding: 4px;
   padding-left: 16px;
@@ -253,15 +257,26 @@ header {
 /* THESIS STYLES */
 
 .video {
-  position: relative;
+  padding: 32px 24px 8px 24px;
+}
+
+.highlights__main video {
   width: 100%;
-  overflow: hidden;
 }
 
 /* FOOTER STYLES */
 
 .footer {
+  border-top: 1px solid lightgrey;
   padding: 16px 24px;
   font-size: 0.8rem;
   height: 3rem;
+}
+
+.footer_nav {
+  float: right;
+}
+
+.footer_nav span {
+  padding-left: 16px;
 }
