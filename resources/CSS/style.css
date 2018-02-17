@@ -113,6 +113,12 @@ header {
   border-right: 2px solid lightgrey;
 }
 
+.highlights__main_text {
+  height: 300px
+  background-color: yellow;
+  z-index: 20;
+}
+
 .highlights__main img {
   width: 90%;
   padding: 32px 24px 8px 24px;
@@ -121,6 +127,7 @@ header {
 .highlights__main video {
   width: 90%;
   padding: 32px 24px 8px 24px;
+  overflow: hidden;
 }
 
 .highlights__misc {
@@ -244,3 +251,17 @@ header {
 }
 
 /* THESIS STYLES */
+
+.video {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+/* FOOTER STYLES */
+
+.footer {
+  padding: 16px 24px;
+  font-size: 0.8rem;
+  height: 3rem;
+}
