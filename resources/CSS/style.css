@@ -371,14 +371,29 @@ padding: 8px 0px;
 
 @media screen and (max-width: 710px) {
 
+.courses__headline {
+  background-color: teal;
+}
+
 .courses {
   padding: 16px 16px 32px 16px;
+  background-color: teal;
+}
+
+.courses__subject {
+  margin: 8px;
+}
+
+.courses__subject_text:hover {
+  background-color: orange;
+  transition: 0.1s 0.05s;
 }
 
 .courses__subject_text {
   height: auto;
   text-align: left;
   padding: 16px 16px 24px 16px;
+  background-color: grey;
 }
 
 .courses__subject_text p {
