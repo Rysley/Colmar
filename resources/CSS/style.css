@@ -400,6 +400,28 @@ background-color: white;
 color: lightgrey;
 }
 
+@media screen and (max-width: 710px) {
+
+.thesis__headline h2 {
+  padding-top: 32px;
+  padding-bottom: 16px;
+}
+
+.highlights__misc.landscape {
+display: none;
+}
+
+.highlights__main.video {
+  display: block;
+  width: 100%;
+  padding: 0px;
+  border: none;
+  padding-bottom: 16px;
+}
+
+}
+
+
 /* FOOTER STYLES */
 
 .footer {
@@ -415,4 +437,13 @@ color: lightgrey;
 
 .footer_nav span {
   padding-left: 16px;
+}
+
+@media screen and (max-width: 710px) {
+  .footer {
+    text-align: center;
+    padding: 16px;
+    height: auto;
+  }
+
 }
