@@ -311,7 +311,8 @@ align-self: center;
 
 .highlights__misc_text {
   padding-left: 16px;
-  padding-bottom: 48px;
+  padding-bottom: 32px;
+  padding-top: 16px;
 }
 
 
@@ -364,6 +365,24 @@ align-self: center;
 
 .courses__subject_text {
   height: 180px;
+}
+
+@media screen and (max-width: 710px) {
+
+.courses {
+  padding: 16px 16px 32px 16px;
+}
+
+.courses__subject_text {
+  height: auto;
+  text-align: left;
+  padding: 16px 16px 24px 16px;
+}
+
+.courses__subject_text p {
+  display: none;
+}
+
 }
 
 /* THESIS STYLES */
