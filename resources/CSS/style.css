@@ -286,6 +286,37 @@ align-self: center;
   padding-left: 16px;
 }
 
+@media screen and (max-width: 710px) {
+
+.highlights__main {
+  display: none;
+}
+
+.highlights__misc {
+  width: 100%;
+}
+
+.highlights__misc_container {
+  flex-direction: column;
+}
+
+.highlights__misc_photo {
+  padding: 16px;
+  width: 100%;
+}
+
+.highlights__misc_container:first-of-type {
+  margin-top: 0px;
+}
+
+.highlights__misc_text {
+  padding-left: 16px;
+  padding-bottom: 48px;
+}
+
+
+}
+
 /* COURSES STYLES */
 
 .stripe {
