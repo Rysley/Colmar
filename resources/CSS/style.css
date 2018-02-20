@@ -23,6 +23,13 @@ h3 {
   font-size: 1.4rem;
 }
 
+@media screen and (max-width: 710px) {
+
+  html {
+    font-size: 15px;
+  }
+}
+
 /* HEADER STYLES */
 
 header {
@@ -144,6 +151,7 @@ li.mobile {
   width: 40%;
   padding-left: 32px;
   padding-right: 32px;
+  margin-right: 32px;
 }
 
 .banner__text_element {
@@ -158,11 +166,36 @@ li.mobile {
   color: white;
   padding: 8px;
   margin-top: 15px;
+  margin-bottom: 32px;
 }
 
 .banner__button:hover {
   transition: background-color 0.5s linear 0.05s;
   background-color: orange;
+}
+
+@media screen and (max-width: 710px) {
+
+.banner {
+  flex-direction: column;
+}
+
+.banner__photo {
+  width: 100%;
+  padding: 0;
+}
+
+.banner__text {
+  width: 100%;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.banner__button {
+width: 75%;
+align-self: center;
+}
+
 }
 
 
