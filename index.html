@@ -6,18 +6,22 @@
     <title>Colmar Academy</title>
   </head>
   <body>
-    <header>
+    <header id='header'>
       <div class='header__icons'>
-        <img src="./resources/media/images/ic-logo.svg"/>
+        <a class='landscape' href ='#header'><img src="./resources/media/images/ic-logo.svg"/></a>
         <span><strong>COLMAR</strong> ACADEMY</span>
       </div>
       <div class='header__nav'>
         <nav>
           <ul class='header__list'>
-            <li><a href='#'>On campus</a></li>
-            <li><a href='#'>Online</a></li>
-            <li><a href='#'>Our companies</a></li>
-            <li><a href='#'>Sign in</a></li>
+            <li class='mobile'><a href ='#header'><img src="./resources/media/images/ic-logo.svg"/></a></li>
+            <li class='landscape'><a href='#campus'>On campus</a></li>
+            <li class='mobile'><a href='#campus'><img src="./resources/media/images/ic-on-campus.svg"/></a></li>
+            <li class='landscape'><a href='#'>Online</a></li>
+            <li class='mobile'><a href='#'><img src="./resources/media/images/ic-online.svg"/></a></li>
+            <li class='landscape'><a href='#'>Our companies</a></li>
+            <li class='landscape'><a href='#'>Sign in</a></li>
+            <li class='mobile'><a href='#'><img src="./resources/media/images/ic-login.svg"/></a></li>
           </ul>
         </nav>
       </div>
@@ -33,7 +37,7 @@
         <a class='banner__button' href='#'><span>Start here</span></a>
       </div>
     </div>
-    <div class='highlights top'>
+    <div class='highlights top' id='campus'>
       <div class='highlights__main'>
         <div class='highlights__main_photo'>
           <img src='./resources/media/images/information-main.jpg'/>
@@ -132,7 +136,7 @@
     <div class='thesis__headline stripe'>
       <h2>Thesis exhibit</h2>
     </div>
-    <div class='highlights bottom'>
+    <div class='highlights bottom' id='online'>
       <div class="highlights__main video">
         <div class='highlights__video'>
           <video src='./resources/media/videos/thesis.mp4' controls></video>

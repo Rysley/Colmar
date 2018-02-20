@@ -1,4 +1,4 @@
-bule/* GENERAL STYLES */
+/* GENERAL STYLES */
 
 html {
   font-size: 18px;
@@ -36,10 +36,15 @@ header {
   display: flex;
   align-items: center;
   padding: 14px;
+  padding-right: 16px;
 }
 
-.header__icons img {
+/*.header__icons img {
   height: 45px;
+}*/
+
+header img {
+  height: 2.3rem;
 }
 
 .header__list {
@@ -55,27 +60,60 @@ header {
   transition: color 0.1s 0.2s;
 }
 
+.mobile {
+  display: none;
+}
+
+@media screen and (max-width: 650px) {
+
+.header__icons span {
+  display: none;
+}
+
+.landscape  {
+  display: none;
+}
+
+header img {
+  height: 1.9rem;
+}
+
+.header__nav {
+  justify-content: space-around;
+}
+
+.mobile {
+  display: block;
+}
+
+.header__icons    {
+  display: none;
+}
+
+header{
+  display: flex;
+  background-color: green;
+  width: 100%;
+  justify-content: space-around;
+}
+
+
+}
 /* BANNER STYLES */
 
 .banner {
   display: flex;
   justify-content: flex-start;
   background-color: lightgrey;
-  /*height: 500px;*/
 }
 
 .banner__photo {
-  /*background-image: url("../../resources/media/images/banner.jpg");*/
-  /*background-size: cover;*/
   width: 60%;
   padding: 32px 24px;
-  /*background-position: top right;*/
-  /*margin: 32px 24px;*/
 }
 
 .banner__photo img {
   width: 100%;
-  /*padding: 32px 24px;*/
 }
 
 .banner__text {
@@ -84,6 +122,7 @@ header {
   justify-content: center;
   width: 40%;
   padding-left: 32px;
+  padding-right: 32px;
 }
 
 .banner__text_element {
@@ -128,13 +167,11 @@ header {
 
 .highlights__main img {
   width: 100%;
-  /*padding: 32px 24px 8px 24px;*/
 }
 
 .highlights__main_photo {
   padding: 32px 24px 8px 24px;
 }
-
 
 .highlights__misc {
   display: flex;
@@ -143,17 +180,12 @@ header {
 }
 
 .highlights__text_element {
-  width: 90%;
   padding: 10px 24px;
 }
 
 .highlights__credits {
   font-size: 0.7rem;
   padding: 10px 24px;
-}
-
-.highlights__misc_photo:first-of-type {
-/*  padding-top: 32px;*/
 }
 
 .highlights__misc_photo {
@@ -220,19 +252,13 @@ header {
 }
 
 .courses__subject {
-  /*display: flex;
-  flex-direction: column;*/
   margin: 16px;
   background-color: white;
-  /*height: auto;*/
   width: 350px;
   flex-grow: 2;
   overflow-x: hidden;
   overflow-y: hidden;
   height: auto;
-  /*height: auto;*/
-  /*width: 400px;
-  height: 300px;*/
 }
 
 .courses__subject img {
@@ -263,6 +289,11 @@ header {
 
 .highlights__main video {
   width: 100%;
+}
+
+.thesis__headline {
+background-color: white;
+color: lightgrey;
 }
 
 /* FOOTER STYLES */
