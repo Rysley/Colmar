@@ -2,7 +2,8 @@
 
 html {
   font-size: 18px;
-  background-color: #FDFAFE;
+  font-kerning: normal;
+  background-color: #FDFAFE
 }
 
 svg {
@@ -10,7 +11,7 @@ svg {
 }
 
 body {
-  font-family: Verdana monospace, sans-serif;
+  font-family: "Lato", Verdana monospace, sans-serif;
   line-height: 1.4;
   /*color: #6B7678;*/
   color: #828081;
@@ -23,6 +24,7 @@ p {
 }
 
 h2 {
+  font-family: 'Cinzel', Georgia, serif;
   font-size: 2rem;
   line-height: 1.2;
   color: #545756;
@@ -77,6 +79,7 @@ header img {
   display: flex;
   align-items: center;
   justify-content: center;
+  font-weight: 600;
 }
 
 .header__list li {
@@ -85,8 +88,12 @@ header img {
 
 .header__list li:hover {
   color: #E66057;
-  text-decoration: underline;
+  /*text-decoration: underline;*/
   transition: color 0.1s 0.1s;
+}
+
+.header__list li:active {
+  color: #E92E29;
 }
 
 .mobile {
@@ -152,7 +159,9 @@ li.mobile {
 .banner {
   display: flex;
   justify-content: flex-start;
-  background-color: #DDE3E1;
+  /*background-color: #DDE3E1;*/
+  background: linear-gradient(#DDE3E1, #DDE3A4);
+  background-attachment: fixed;
 }
 
 .banner__photo {
@@ -173,32 +182,28 @@ li.mobile {
 }
 
 .banner__text_element {
-  /*color: #8D9190;*/
-  /*color: #303030*/
   padding: 10px;
   margin-left: 24px;
 }
 
-
 .banner__button {
   text-align: center;
   width: 90%;
-  /*background-color: #99A8AB;*/
-  /*background-color: #636665;*/
   background-color: #E57775;
   color: white;
   padding: 8px;
   margin-top: 15px;
   margin-bottom: 32px;
   margin-left: 24px;
-  box-shadow: 1px 2px #888888;
-  border-radius: 9px 9px;
+  box-shadow: 1px 1px #DDE3E1;
+  letter-spacing: 1px;
 }
 
+
 .banner__button:hover {
-  transition: background-color 0.2s linear 0.05s;
+  transition: background-color 0.1s ease-in-out 0.05s;
   /*background-color: #E66057;*/
-  background-color: #B54C44;
+  background-color: #C2312B;
 }
 
 .banner__button:active {
@@ -237,6 +242,11 @@ margin-right: 16px;
 padding: 8px 0px;
 }
 
+.banner__button:active {
+margin-left: 17px;
+margin-right: 15px;
+}
+
 }
 
 
@@ -250,7 +260,7 @@ padding: 8px 0px;
   display: flex;
   flex-direction: column;
   width: 60%;
-  border-right: 1px solid lightgrey;
+  border-right: 1px solid #DDE3E1;
   padding-bottom: 32px;
 }
 
@@ -261,6 +271,7 @@ padding: 8px 0px;
 
 .highlights__main img {
   width: 100%;
+  /*border-radius: 5px;*/
 }
 
 .highlights__main_photo {
@@ -280,6 +291,8 @@ padding: 8px 0px;
 .highlights__credits {
   font-size: 0.7rem;
   padding: 10px 24px;
+  font-weight: bold;
+  color: #545756;
 }
 
 .highlights__misc_photo {
@@ -291,22 +304,24 @@ padding: 8px 0px;
 
 .highlights__misc_photo img {
   height: auto;
-  border-radius: 9px;
+  border-radius: 5px;
   width: 100%;
 }
 
 .highlights__misc_container {
   display: flex;
+  border-top: 1px solid #DDE3E1;
   /*border-bottom: 2px solid lightgrey;*/
 }
 
 .highlights__misc_container:first-of-type {
   margin-top: 16px;
+  border-top: none;
 }
 
 .highlights__misc_container:hover {
   background-color: #DDE3E1;
-  border-radius: 9px 9px
+  /*border-radius: 9px 9px*/
 }
 
 .highlights__misc_text {
@@ -399,7 +414,8 @@ padding: 8px 0px;
   flex-flow: row wrap;
   justify-content: center;
   align-items: center;
-  background-color: #DDE3E1;
+  /*background-color: #DDE3E1;*/
+  background: linear-gradient(#DDE3E1, #DDE3BF);
   padding-left: 72px;
   padding-right: 72px;
   padding-bottom: 32px;
@@ -456,9 +472,21 @@ padding: 8px 0px;
   color: #828081;
 }
 
-/*.courses__subject_text h3:hover {
-  color: #E57775;
-}*/
+@media screen and (max-width: 930px) {
+
+.courses {
+  padding-left: 32px;
+  padding-right: 32px;
+}
+
+.courses__subject {
+  flex-grow: 1;
+  width: 280px;
+  padding-bottom: 32px;
+}
+
+}
+
 
 @media screen and (max-width: 710px) {
 
@@ -468,7 +496,7 @@ padding: 8px 0px;
 
 .courses__subject {
   margin: 8px;
-  /*background-color: #828081;*/
+  width: 350px;
   box-shadow: 1px 1px #B8BDBB;
 }
 
@@ -476,8 +504,6 @@ padding: 8px 0px;
   height: auto;
   text-align: left;
   border-radius: 9px;
-  /*padding: 16px 16px 24px 16px;*/
-
 }
 
 .courses__subject_text:hover {
@@ -521,7 +547,7 @@ color: lightgrey;
 @media screen and (max-width: 710px) {
 
 .thesis__headline h2 {
-  padding-top: 32px;
+  padding-top: 24px;
   padding-bottom: 16px;
 }
 
@@ -543,7 +569,7 @@ display: none;
 /* FOOTER STYLES */
 
 .footer {
-  border-top: 1px solid lightgrey;
+  border-top: 1px solid #DDE3E1;
   padding: 16px 24px;
   font-size: 0.8rem;
   height: 3rem;
